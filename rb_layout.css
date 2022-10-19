@@ -1,0 +1,305 @@
+@charset "utf-8";
+
+/*
+
+  
+   Filename: rb_layout.css
+   Author: Bipin Kharel
+
+*/
+
+
+/* HTML and Body styles */
+
+html {
+   background: rgb(246, 174, 176) url(back.jpg);
+   font-family: Verdana, Geneva, sans-serif;
+   height: 100%;
+   color: rgb(141, 141, 141);
+}
+
+body {
+   background-color: white;
+   box-shadow: rgb(51, 51, 51) 20px 0px 40px,  rgb(51, 51, 51) -20px 0px 40px,
+               inset rgb(51, 21, 21) 0px 0px 40px;
+   border-left: 2px solid rgb(51, 51, 51);
+   border-right: 2px solid rgb(51, 51, 51);
+   min-height: 100%; 
+   
+   margin: 0px auto;
+   min-width: 640px;
+   max-width: 1524px;  
+   width: 100%;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;    
+}
+
+
+
+/* Header styles */
+
+header img#logoimg {
+   width: 100%;
+   height: 40%;
+
+}
+
+header {
+   background: linear-gradient(to bottom, black 70%, rgb(179, 20, 25));
+   border-bottom: 1px solid rgb(11, 235, 123);
+   color: white;
+   width: 100%;
+   height: 80%;
+}
+
+body header nav ul {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row nowrap;
+   flex-flow: row nowrap;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
+body header nav ul li {
+   -webkit-flex: 0 1 auto;
+   flex: 0 1 auto;
+}
+
+
+/* Navigation list styles */
+
+header nav ul li {
+   font-size: 1.2em; 
+   line-height: 3.2em; 
+   height: 5em;
+   padding: 0px 12px;
+}
+
+header nav ul li a {
+   color: white;
+   display: block;
+   width: 100%;
+}
+
+header nav ul li a:hover {
+   color: rgb(249, 209, 17);
+}
+
+
+/* Section Styles */
+
+section#build {
+   -webkit-flex: 1 1 600px;
+   flex: 1 1 600px;
+   position: relative;    
+   padding-left: 20px;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;    
+}
+
+body > section#build > h1 {
+   width: 100%;
+   text-align: center;
+   font-size: 2.3em;
+   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+   margin: 10px 0px;
+   color: rgb(179, 20, 25);
+   text-transform: uppercase;
+   letter-spacing: 0.14em;
+}
+
+/* Article Styles */
+
+article {
+   -webkit-flex: 1 1 250px;
+   flex: 1 1 250px;   
+   margin: 20px;
+}
+
+article h1 {
+   color: rgb(0, 81, 226);
+   font-family: "Times New Roman", Times,  serif;
+   font-weight: normal;
+   font-size: 3.5em;
+   letter-spacing: 0.03em;
+   line-height: 1.2em;
+   margin-bottom: 20px;
+   text-align: center;
+   font-weight: bold;
+
+}
+
+article p {
+   line-height: 1.5;
+   color: rgb(19, 3, 63);
+   
+   margin-bottom: 15px;
+   font-size: 1.5em;
+   font-family: cursive;
+}
+
+article p em {
+   color: rgb(154, 64, 3);
+}
+
+
+/* Styles for the Pizza Preview Image */
+
+div#previewBox img {
+   display: block;
+   width: 300px;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+}
+
+/* Styles for Pizza Description Box */
+
+
+div#smokeBox {
+   position: relative;
+   -webkit-flex: 1 1 200px;
+   flex: 1 1 200px;
+   margin: 8px;
+   font-size: 0.9em;
+   box-shadow: 0px 0px 1px rgb(51, 51, 51), 0px 0px 4px rgb(51, 51, 51), 0px 0px 12px rgb(51, 51, 51);
+}
+
+div#smokeBox h1 {
+   background-color: rgb(179, 20, 25);
+   color: rgb(221, 221, 221);
+   font-size: 1.2em;
+   text-align: center;
+   height: 10px;
+   line-height: 40px;
+   font-weight: normal;
+   letter-spacing: 0.2em;
+}
+
+div#smokeBox p {
+   margin: 10px;
+   border-bottom: 2px solid rgb(211, 155, 155);
+   padding-bottom: 10px;
+}
+
+div#smokeBox label {
+   display: block;
+   width: 80px;
+   float: left;
+   margin: 8px 20px 8px 8px;
+}
+
+div#smokeBox select {
+   display: block;
+   margin: 1px 0px;
+   width: 40px;
+   float: left;
+}
+
+div#smokeBox input {
+   position: absolute;
+   height: 40px;
+   bottom: 10px;
+   right: 10px;
+   width: 150px;
+   border: 3px solid white;
+   box-shadow: 0px 0px 1px rgb(151, 95, 95), 0px 0px 3px rgb(151, 95, 95);
+}
+
+div#smokeBox input:hover {
+   background-color: rgba(151, 95, 95, 1);
+   color: rgb(231, 231, 231);
+}
+
+
+/* Styles for the Pizza Options Fieldset */
+
+
+body > section#build > fieldset#pizzaOptions {
+   -webkit-flex: 1 1 200px;
+   flex: 1 1 200px;
+   margin: 10px;
+   padding: 15px;
+   border: 1px solid rgb(191, 191, 191);   
+}
+
+body > section#build fieldset#pizzaOptions label {
+   width: 180px;
+   float: left;
+   clear: left;
+   margin-bottom: 15px;
+}
+
+body > section#build fieldset#pizzaOptions input, body > section#build fieldset#pizzaOptions select {
+   float: left;
+   margin-bottom: 15px;
+}
+
+/* Styles for theFieldset */
+
+body > section#build > fieldset#toppings {
+   -webkit-flex: 1 1 200px;
+   flex: 1 1 200px;
+   margin: 10px;
+   padding: 10px;
+   border: 1px solid rgb(191, 191, 191);   
+}
+
+body > section#build > fieldset#toppings label {
+   display: inline-block;
+   width: 120px;
+}
+
+
+
+
+
+
+/* Footer styles */   
+
+body > footer {
+   width: 100%;
+   color: white;    
+   background: linear-gradient(to bottom, rgb(179, 20, 25), black);   
+   -moz-column-width: 200px;
+   -webkit-column-width: 400px;
+    column-width: 400px;
+
+   -moz-column-gap: 25px;
+   -webkit-column-gap: 25px;
+    column-gap: 25px;
+    
+    padding: 20px 40px;
+  
+}
+
+footer h1 {
+   color: rgb(255, 241, 147);   
+   font-size: 0.9em;
+   margin: 10px 0px;
+}
+
+footer h1:first-of-type {
+   margin-top: 0px;
+}
+
+footer a {
+   display: block;
+   color: white;
+   text-decoration: none;
+   font-size: 1.8em;
+}
+
+footer a:hover {
+   text-decoration: underline;
+}
+
+footer address {
+   margin-top: 300px;
+   font-style: normal;
+}
